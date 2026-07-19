@@ -1,0 +1,16 @@
+# patch files for FroggerTP_Final integration
+
+This commit adds renderer helpers and improved spritesheet access. It's a bundle
+of small refactors extracted from the FroggerTP_Final repo to help testing and
+integration in a safe separate repo.
+
+Files included (placed under frogger_patch/):
+- a_sprites.c / a_sprites.h
+- a_alphanum.c / a_alphanum.h
+- a_map.c
+- render.c / render.h
+- a_PC_display.c (hooked to use render)
+- a_frog_move.c (simple input helpers)
+- Debug/subdir.mk (updated to include render.c)
+
+These are minimal, non-invasive changes — see the individual files for details.
